@@ -5,7 +5,8 @@
 
 .app-footer
 {
-  height: 50px;
+  height: calc(50px + env(safe-area-inset-bottom));
+  bottom: 0px;
   background-color: #ffffff;
   border-top: 1px solid #cccccc;
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
