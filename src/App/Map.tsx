@@ -155,6 +155,7 @@ const Content = (props: Props) => {
       <div
         ref={mapNode}
         style={CSS}
+        data-style="https://raw.githubusercontent.com/geolonia/basic-gsij/master/style.json"
         data-geolocate-control="on"
         data-marker="off"
         data-gesture-handling="off"
