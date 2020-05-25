@@ -120,7 +120,7 @@ const Content = (props: Props) => {
       container: mapNode.current,
       style: style,
       bounds: bounds,
-      fitBoundsOptions: {padding: 100}
+      fitBoundsOptions: {padding: 50}
     });
 
     const onMapLoad = () => {
