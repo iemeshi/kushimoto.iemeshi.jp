@@ -111,7 +111,7 @@ const Content = (props: Props) => {
     // @ts-ignore
     const { geolonia } = window;
 
-    const style = 'geolonia/basic'
+    const style = 'https://raw.githubusercontent.com/geolonia/basic-gsij/master/style.json'
 
     const geojson = toGeoJson(props.data)
     const bounds = geojsonExtent(geojson)
@@ -124,7 +124,6 @@ const Content = (props: Props) => {
     });
 
     const onMapLoad = () => {
-      map.setLayoutProperty('building', 'visibility', 'none')
       map.setLayoutProperty('poi', 'visibility', 'none')
       map.setLayoutProperty('poi-primary', 'visibility', 'none')
       setMapObject(map)
@@ -155,7 +154,6 @@ const Content = (props: Props) => {
       <div
         ref={mapNode}
         style={CSS}
-        data-style="https://raw.githubusercontent.com/geolonia/basic-gsij/master/style.json"
         data-geolocate-control="on"
         data-marker="off"
         data-gesture-handling="off"
